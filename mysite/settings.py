@@ -20,17 +20,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-qyb5ekvc7w(w+3i&trdva$v69cf7^8lvzeexkdz%xmvup((%07'
+SECRET_KEY = 'django-insecure-hc_l=)&j6-ppgeep-$!!bpus2_6h9v@u0@(#_c--*x*e+a@em$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['leandrosizilio.pythonanywhere.com']
+ALLOWED_HOSTS = ['dsweb241.pythonanywhere.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'raiz.apps.RaizConfig',
     'enquetes.apps.EnquetesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME':  BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -125,7 +126,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/leandrosizilio/mysite/media'
+MEDIA_ROOT = '/home/dsweb241/mysite/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/leandrosizilio/mysite/static'
+STATIC_ROOT = '/home/dsweb241/mysite/static'
 STATIC_URL = '/static/'
